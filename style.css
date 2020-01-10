@@ -13,6 +13,13 @@ h6 {
   font-family: "Oxygen";
 }
 
+.clear-fix::after,
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .hidden {
   width: 0;
   height: 0;
@@ -28,6 +35,7 @@ h6 {
   border-radius: 5px;
   color: white;
   text-decoration: none;
+  transition: background 0.2s;
 }
 
 .button:hover {
@@ -145,4 +153,54 @@ footer li {
 footer li a {
   text-decoration: none;
   color: white;
+}
+
+/* Media Queries - 760px*/
+@media screen and (min-width: 48.75em) {
+  .top-header img {
+    float: left;
+  }
+
+  .top-nav {
+    float: right;
+    background: transparent;
+    margin-top: 1.75em;
+  }
+
+  .top-nav li {
+    display: inline-block;
+  }
+
+  .top-nav a {
+    color: #713a84;
+  }
+
+  .top-nav a:hover {
+    background: #e7d9fc;
+  }
+
+  .top-content {
+    background-color: #521a66;
+    color: white;
+  }
+
+  .top-content h1,
+  .top-content h2 {
+    color: white;
+  }
+
+  .col-1_4 {
+    width: 44%;
+    margin: 3%;
+    float: left;
+  }
+
+  .main-content .button {
+    float: right;
+  }
+}
+
+/* Media Queries - 1000px*/
+
+@media screen and (min-width: 62.5em) {
 }
