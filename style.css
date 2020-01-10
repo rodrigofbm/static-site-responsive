@@ -86,6 +86,16 @@ h6 {
   background: #f6f6f6;
 }
 
+.top-content .icon-play {
+  display: none;
+  height: 5em;
+}
+
+.top-content .icon-play img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .top-content h1 {
   color: #612674;
   font-size: 1.375em; /* 22 / 16 */
@@ -192,6 +202,10 @@ footer li a {
     color: white;
   }
 
+  .top-content .icon-play {
+    display: block;
+  }
+
   .top-content h1,
   .top-content h2 {
     color: white;
@@ -216,7 +230,7 @@ footer li a {
     background-position: center top;
     background-size: cover;
     height: 30em;
-    padding-top: 15em;
+    padding-top: 10em;
   }
 }
 
@@ -228,7 +242,7 @@ footer li a {
     background-size: cover;
     height: 45em;
     padding: 0 14em;
-    padding-top: 30em;
+    padding-top: 25em;
   }
 
   .col-1_4 {
