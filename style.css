@@ -8,6 +8,10 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  min-width: 28.75em;
+}
+
 h1,
 h2,
 h3,
@@ -209,7 +213,7 @@ footer li a {
 @media screen and (min-width: 62.5em) {
   .top-content {
     background: #521a66 url(images/bg_topo_1198x670.jpg) no-repeat;
-    background-position: top right;
+    background-position: center top;
     background-size: cover;
     height: 30em;
     padding-top: 15em;
@@ -218,4 +222,28 @@ footer li a {
 
 /* Media Queries - 1024px*/
 @media screen and (min-width: 64em) {
+  .top-content {
+    background: #521a66 url(images/bg_topo_1600x1374.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 45em;
+    padding: 0 14em;
+    padding-top: 30em;
+  }
+
+  .col-1_4 {
+    width: 21%;
+    margin: 2%;
+    float: left;
+  }
+
+  .col-1_2 {
+    width: 44%;
+    margin: 3%;
+    float: left;
+  }
+
+  .main-content .button {
+    float: none;
+  }
 }
