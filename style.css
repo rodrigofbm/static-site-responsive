@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
 }
@@ -155,7 +159,7 @@ footer li a {
   color: white;
 }
 
-/* Media Queries - 760px*/
+/* Media Queries - 780px*/
 @media screen and (min-width: 48.75em) {
   .top-header img {
     float: left;
@@ -203,4 +207,15 @@ footer li a {
 /* Media Queries - 1000px*/
 
 @media screen and (min-width: 62.5em) {
+  .top-content {
+    background: #521a66 url(images/bg_topo_1198x670.jpg) no-repeat;
+    background-position: top right;
+    background-size: cover;
+    height: 30em;
+    padding-top: 15em;
+  }
+}
+
+/* Media Queries - 1024px*/
+@media screen and (min-width: 64em) {
 }
